@@ -2,9 +2,9 @@
 
 <h1 class="ROCOGazetteHeading"><%= OLSKLocalized('ROCOGazetteHeadingText') %></h1>
 
-<%- include('./node_modules/OLSKFollow/main.ejs') %>
+<%- include(`${ _OLSKModulesDirPrefix }./node_modules/OLSKFollow/main.ejs`) %>
 
-<%- include('./node_modules/ROCOBulletin/main.ejs', {
+<%- include(`${ _OLSKModulesDirPrefix }./node_modules/ROCOBulletin/main.ejs`, {
 	ROCOBulletinProject,
 }) %>
 
