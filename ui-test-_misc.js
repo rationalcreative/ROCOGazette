@@ -10,6 +10,14 @@ describe('ROCOGazette_Misc', function () {
 		});
 	});
 
+	describe('ROCOGazette', function test_ROCOGazette () {
+
+		it('classes OLSKDecorModule', function () {
+			browser.assert.hasClass(ROCOGazette, 'OLSKDecorModule');
+		});
+		
+	});
+
 	describe('ROCOBulletin', function test_ROCOBulletin () {
 
 		it('sets ROCOBulletinProject', function () {
