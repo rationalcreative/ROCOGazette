@@ -1,0 +1,8 @@
+{
+  "name": "ROCOGazette",
+  "main": "main.ejs",
+  "dependencies": {
+    "OLSKFollow": "olsk/OLSKFollow",
+    "ROCOBulletin": "olsk/ROCOBulletin"
+  }
+}
