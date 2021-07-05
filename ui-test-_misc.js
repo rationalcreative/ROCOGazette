@@ -12,7 +12,7 @@ describe('ROCOGazette_Misc', function () {
 
 	describe('ROCOBulletin', function test_ROCOBulletin () {
 
-		it('sets src', function () {
+		it('sets ROCOBulletinProject', function () {
 			browser.assert.attribute('.ROCOBulletinProjectField', 'value', ROCOBulletinProject);
 		});
 
