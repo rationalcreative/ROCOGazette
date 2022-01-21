@@ -4,6 +4,8 @@ Object.entries({
 	ROCOGazette: '.ROCOGazette',
 
 	ROCOGazetteHeading: '.ROCOGazetteHeading',
+
+	ROCOGazetteBulletinFeedback: '.ROCOGazetteBulletinFeedback',
 }).map(function (e) {
 	return global[e.shift()] = e.pop();
 });
@@ -28,6 +30,24 @@ describe('ROCOGazette_Access', function () {
 
 	it('shows ROCOBulletin', function () {
 		browser.assert.elements('.ROCOBulletin', 1);
+	});
+
+	it('hides ROCOGazetteBulletinFeedback', function () {
+		browser.assert.elements(ROCOGazetteBulletinFeedback, 0);
+	});
+
+	context('ROCOGazetteFeedback', function () {
+
+		before(function() {
+			return browser.OLSKVisit(kDefaultRoute, {
+				ROCOGazetteFeedback: Math.random().toString(),
+			});
+		});
+
+		it('shows ROCOGazetteBulletinFeedback', function () {
+			browser.assert.elements(ROCOGazetteBulletinFeedback, 1);
+		});
+
 	});
 
 });

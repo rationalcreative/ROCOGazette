@@ -4,8 +4,12 @@
 
 <%- include(`${ _OLSKModulesDirPrefix }./node_modules/OLSKFollow/main.ejs`) %>
 
-<%- include(`${ _OLSKModulesDirPrefix }./node_modules/ROCOBulletin/main.ejs`, {
-	ROCOBulletinProject,
-}) %>
+<% if (locals.ROCOGazetteFeedback) { -%>
+	<p class="ROCOGazetteBulletinFeedback OLSKCommonAlert"><%= locals.ROCOGazetteFeedback %></p>
+<% } else { -%>
+	<%- include(`${ _OLSKModulesDirPrefix }./node_modules/ROCOBulletin/main.ejs`, {
+		ROCOBulletinProject,
+	}) %>
+<% } -%>
 
 </div>
