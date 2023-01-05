@@ -13,7 +13,7 @@ const mod = {
 					return value !== 'undefined';
 				}))));
 			},
-			OLSKRouteLanguageCodes: ['en', 'fr', 'es', 'pt'],
+			OLSKRouteLanguageCodes: ['en', 'fr', 'es', 'pt', 'de'],
 		}];
 	},
 
