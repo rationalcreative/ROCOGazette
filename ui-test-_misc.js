@@ -14,7 +14,7 @@ describe('ROCOGazette_Misc', function () {
 	describe('ROCOGazette', function test_ROCOGazette () {
 
 		it('classes OLSKDecorModule', function () {
-			browser.assert.hasClass(ROCOGazette, 'OLSKDecorModule');
+			return browser.assert.hasClass(ROCOGazette, 'OLSKDecorModule');
 		});
 		
 	});
@@ -22,7 +22,7 @@ describe('ROCOGazette_Misc', function () {
 	describe('ROCOBulletin', function test_ROCOBulletin () {
 
 		it('sets ROCOBulletinProject', function () {
-			browser.assert.attribute('.ROCOBulletinProjectField', 'value', ROCOBulletinProject || 'RP_X');
+			return browser.assert.attribute('.ROCOBulletinProjectField', 'value', ROCOBulletinProject || 'RP_X');
 		});
 
 	});
@@ -38,11 +38,11 @@ describe('ROCOGazette_Misc', function () {
 		describe('ROCOGazetteBulletinFeedback', function test_ROCOGazetteBulletinFeedback () {
 
 			it('classes OLSKCommonAlert', function () {
-				browser.assert.hasClass(ROCOGazetteBulletinFeedback, 'OLSKCommonAlert');
+				return browser.assert.hasClass(ROCOGazetteBulletinFeedback, 'OLSKCommonAlert');
 			});
 
 			it('binds ROCOGazetteFeedback', function () {
-				browser.assert.text(ROCOGazetteBulletinFeedback, ROCOGazetteFeedback);
+				return browser.assert.text(ROCOGazetteBulletinFeedback, ROCOGazetteFeedback);
 			});
 
 		});

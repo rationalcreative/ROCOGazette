@@ -15,7 +15,7 @@ kDefaultRoute.OLSKRouteLanguageCodes.forEach(function (OLSKRoutingLanguage) {
 		});
 
 		it('localizes ROCOGazetteHeading', function () {
-			browser.assert.text(ROCOGazetteHeading, uLocalized('ROCOGazetteHeadingText'));
+			return browser.assert.text(ROCOGazetteHeading, uLocalized('ROCOGazetteHeadingText'));
 		});
 
 	});

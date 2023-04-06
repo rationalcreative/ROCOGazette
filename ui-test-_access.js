@@ -17,23 +17,23 @@ describe('ROCOGazette_Access', function () {
 	});
 
 	it('shows ROCOGazette', function () {
-		browser.assert.elements(ROCOGazette, 1);
+		return browser.assert.elements(ROCOGazette, 1);
 	});
 
 	it('shows ROCOGazetteHeading', function () {
-		browser.assert.elements(ROCOGazetteHeading, 1);
+		return browser.assert.elements(ROCOGazetteHeading, 1);
 	});
 
 	it('shows OLSKFollow', function () {
-		browser.assert.elements('.OLSKFollow', 1);
+		return browser.assert.elements('.OLSKFollow', 1);
 	});
 
 	it('shows ROCOBulletin', function () {
-		browser.assert.elements('.ROCOBulletin', 1);
+		return browser.assert.elements('.ROCOBulletin', 1);
 	});
 
 	it('hides ROCOGazetteBulletinFeedback', function () {
-		browser.assert.elements(ROCOGazetteBulletinFeedback, 0);
+		return browser.assert.elements(ROCOGazetteBulletinFeedback, 0);
 	});
 
 	context('ROCOGazetteFeedback', function () {
@@ -45,7 +45,7 @@ describe('ROCOGazette_Access', function () {
 		});
 
 		it('shows ROCOGazetteBulletinFeedback', function () {
-			browser.assert.elements(ROCOGazetteBulletinFeedback, 1);
+			return browser.assert.elements(ROCOGazetteBulletinFeedback, 1);
 		});
 
 	});
